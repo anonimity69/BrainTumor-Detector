@@ -1,0 +1,211 @@
+.img-preview {
+    width: 256px;
+    height: 256px;
+    position: relative;
+    border: 5px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    margin-bottom: 1em;    
+}
+
+.img-preview>div {
+    width: 100%;
+    height: 100%;
+    background-size: 256px 256px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-label{
+    display: inline-block;
+    padding: 12px 30px;
+    background: #39D2B4;
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.upload-label:hover{
+    background: #34495E;
+    color: #39D2B4;
+}
+
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.ourteam{
+    height:60vh;
+    background-color: #17141d;
+    font-family: 'DM Mono', monospace;
+
+}
+.ourteam h1{
+    text-align: center;
+    color: white;
+}
+.ourteam{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+    height:80vh;
+    background-color: #17141d;
+    font-family: 'DM Mono', monospace;
+    margin: 50px 0px;
+}
+.ourteam .teamcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    margin-top: 15px;
+  
+
+
+}
+.ourteam h1{
+     margin-top: 5px;
+     font-size: 25px;
+}
+.teammem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    width: 370px;
+    min-width: 1.5rem;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    border-radius: 9px;
+    border: 2px solid purple;
+
+}
+.teammem h4{
+    text-align: center;
+}
+.teammem .skills p{
+    text-align: center;
+}
+.teammem .message p{
+    text-align: center;
+}
+.teammem .profiles {
+    display: flex;
+    justify-content: center;
+}
+.teammem .profiles a{
+    display: block;
+}
+.bottom{
+    margin-bottom: 5px;
+}
+/* .teammem:hover{
+    transform: translateY(-1rem);
+}
+.teammem:hover~.teammem{
+    transform: translateX(+130px);
+}
+.teammem:not(:first-child){
+    margin-left: -130px;
+} */
+.teammem .image1{
+    height:200px;
+    width:100%;
+    background: url('Soham.jpeg')no-repeat center/cover;
+}
+.teammem .image2 {
+    height: 200px;
+    width:100%;
+    
+    background: url('Rishi.jpeg')no-repeat center/cover;
+}
+.teammem .image3{
+    height:200px;
+    width:100%;
+    background: url('tanx.jpeg')no-repeat center/cover;
+}
+.teammem .image4{
+    height:200px;
+    width:100%;
+    background: url('Shrayan.jpeg')no-repeat center/cover;
+}
+.teammem:hover{
+    transform: translateY(-30px);
+}
+.none{
+    display: none;
+}
+.teammem .profiles a{
+margin :0 5px;
+}
+.teammem .profiles a i{
+    color:white;
+}
+@media screen and (max-width:1000px) {
+    .ourteam{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        color:white;
+        height:100vh;
+        background-color: #17141d;
+        font-family: 'DM Mono', monospace;
+    }
+    .ourteam .teamcontainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        margin-top: 15px;
+        flex-wrap: wrap;
+      
+    
+    
+    }
+    .teammem:hover{
+        transform: translateY(-30px);
+    }
+    
+}
+@media screen and(max-width:742) {
+    .ourteam{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        color:white;
+        height:3.5em;
+        background-color: #17141d;
+        font-family: 'DM Mono', monospace;
+    }
+    .ourteam .teamcontainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        margin-top: 15px;
+        flex-wrap: wrap;
+      
+    
+    
+    }
+    .teammem:hover{
+        transform: translateY(-30px);
+    }
+    
+
+}
